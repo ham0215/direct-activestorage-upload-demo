@@ -1,1 +1,6 @@
-<div>avatars</div>
+<div>Direct Activestorage Upload Demo</div>
+
+<%= form_with url: :avatars do |form| %>
+  <%= form.file_field :attachments, multiple: true, direct_upload: true %>
+  <%= form.submit %>
+<% end %>
